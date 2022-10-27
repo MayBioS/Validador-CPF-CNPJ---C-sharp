@@ -1,0 +1,16 @@
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/Pessoas
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/Pessoas.deps.json
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/Pessoas.runtimeconfig.json
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/Pessoas.runtimeconfig.dev.json
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/Pessoas.dll
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/ref/Pessoas.dll
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/bin/Debug/net5.0/Pessoas.pdb
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.csproj.AssemblyReference.cache
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.AssemblyInfoInputs.cache
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.AssemblyInfo.cs
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.csproj.CoreCompileInputs.cache
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.dll
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/ref/Pessoas.dll
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.pdb
+/home/runner/Validador-CPF-and-CNPJ-C-sharp/obj/Debug/net5.0/Pessoas.genruntimeconfig.cache
