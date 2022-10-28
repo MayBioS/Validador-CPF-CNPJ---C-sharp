@@ -8,31 +8,31 @@ namespace Pessoas
         static void Main(string[] args)
         {
             Console.WriteLine("Deseja informar seus dados, sim(s) ou não(n)");
-            string decision = "s" ;//Console.ReadLine();
+            string decision = Console.ReadLine();
             while ("s" == decision)
             {
                 Console.WriteLine("Inserir dados de pessoa fisica(f) ou juridica(j)?");
-                string pessoa = "f";//Console.ReadLine();
+                string pessoa = Console.ReadLine();
 
                 if (pessoa == "f")
                 {
                     PessoaFisica pf = new PessoaFisica();
                     Endereco endereco = new Endereco();
 
-                   /* Console.Write("Informe o nome da rua: ");
-                    endereco.Rua = Console.ReadLine();
-                    Console.Write("Informe o número da residênsia: ");
-                    endereco.Numero = Console.ReadLine();
-                    Console.Write("O tipo de endereço é:");
-                    endereco.TipoEndereco = Console.ReadLine();*/
+                    Console.Write("Informe o nome da rua: ");
+                     endereco.Rua = Console.ReadLine();
+                     Console.Write("Informe o número da residênsia: ");
+                     endereco.Numero = Console.ReadLine();
+                     Console.Write("O tipo de endereço é: ");
+                     endereco.TipoEndereco = Console.ReadLine();
 
-                    Console.Write("Informe o CPF");
+                    Console.Write("Informe os nove primeiros digitos do CPF: ");
                     pf.CPF = Console.ReadLine();
-                    //
+                    
 
                     int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
                     int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
-                    string digito = Console.ReadLine();
+                    string digito = "00";
                     int soma;
                     int resto;
                     pf.CPF = pf.CPF.Trim();
@@ -52,37 +52,35 @@ namespace Pessoas
                     if (resto < 2)
                     {
                         resto = 0;
-                      Console.Write(resto);
-                    }
-                    else{
-                        resto = 11 - resto;
-                    digito = resto.ToString();
-                    pf.CPF = pf.CPF + digito;
-                    soma = 0;}
-                    for (int i = 0; i < 10; i++)
-                        soma += int.Parse(pf.CPF[i].ToString()) * multiplicador2[i];
-                    resto = soma % 11;
-                    if (resto < 2){
-                        resto = 0;
-                      
                     }
                     else
                     {
                         resto = 11 - resto;
-                      
-                        digito = digito + resto.ToString();
-                      Console.Write(digito);
+                        digito = resto.ToString();
+                        pf.CPF = pf.CPF + digito;
+                        soma = 0;
                     }
+                    for (int i = 0; i < 10; i++)
+                        soma += int.Parse(pf.CPF[i].ToString()) * multiplicador2[i];
+                    resto = soma % 11;
+                    if (resto < 2)
+                    {
+                        resto = 0;
+                    }
+                    else
+                    {
+                        resto = 11 - resto;
 
-
-                    //
-                    pf.Nome = "Nome Pessoa Fisica";
+                        digito = digito + resto.ToString();
+                    }
+                    Console.Write("Informe seu nome: ");
+                    pf.Nome = Console.ReadLine();
                     pf.Endereco = endereco;
                     pf.DataNascimento = new DateTime(2001, 03, 19);
                     Console.WriteLine("Seu nome é: {0}\nSua data de nascimento é: {1} ", pf.Nome, pf.DataNascimento);
-                    using (StreamWriter sw = new StreamWriter($"{pf.Nome}.txt"))
+                    using (StreamWriter sw = new StreamWriter($"Banco_de_Dados.txt"))
                     {
-                        sw.Write(pf.Nome + pf.CPF);
+                        sw.Write(endereco.Rua+"\n"+endereco.Numero+"\n"+endereco.TipoEndereco+"\n"+pf.CPF+"\n"+pf.Nome+"\n"+pf.DataNascimento );
                         decision = "";
                     }
                 }

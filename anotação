@@ -8,3 +8,20 @@ adicionou o endreço a classe base pessoa fisica
 escreveu o código 
 publicou o arquivo na plataforma github e o link na galeria forum
 entregou a atividade no prazo estabelecido
+
+
+
+Console.WriteLine("Insira seu ano de nascimento:");
+      Ford.datNasc = Convert.ToInt32(Console.ReadLine());
+      Ford.datAtual = 2022;
+      Ford.idade = (Ford.datAtual - Ford.datNasc);
+      int idMin = 18;
+      if (Ford.idade >= idMin)
+        {
+        Console.WriteLine("Seu nome é: {0}\nE o seu CPF é: {1}\nVocê possui {2} anos de idade, obrigado por confiar em nossos serviços! ", Ford.nome, Ford.cpf, Ford.idade);
+        }
+        else
+            {
+                Console.WriteLine("\n------\n\n!!!ERROR!!!\nVocê possui {0} anos de idade\nIdade invalida, tente novamente em outro momento ", Ford.idade);
+            } 
+    }

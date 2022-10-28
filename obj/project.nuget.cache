@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "m+7ILE9PFXo3ILDZNLbHuQueBqCBeSGDbikJBoJHddMa9zTWXZvzjODprj9zUlP4IMXv1C8H5JLM7jWGocaBUg==",
+  "dgSpecHash": "96P5FpDviuF8Pz90RYk8imzcJi5odzwv7DWEP8OjIf0MumD3A/mkGC7nSvG82gYoxOj+hIgklSBE0/3+jIo9mw==",
   "success": true,
   "projectFilePath": "/home/runner/Validador-CPF-and-CNPJ-C-sharp/Pessoas.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
